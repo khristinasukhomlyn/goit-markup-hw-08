@@ -373,12 +373,9 @@ body {
           align-items: center;
 }
 
-.flexbox-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
+/*.flexbox-list {
   display: flex;
-}
-
+}*/
 .flexbox-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,10 +434,28 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15 px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
