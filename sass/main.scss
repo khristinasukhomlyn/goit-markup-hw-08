@@ -1,6 +1,9 @@
 @import "./utils/variables";
+@import "./utils/mixin";
+@import "./utils/brakepoints";
 @import "./base/normalize";
 @import "./base/common";
+@import "./components/container";
 @import "./components/logo";
 @import "./components/buttons";
 @import "./components/menu";
@@ -8,6 +11,8 @@
 @import "./components/socialfooter";
 @import "./components/modal";
 @import "./components/footerbtn";
+@import "./components/contactsfooter";
+@import "./components/contact-us-footer";
 @import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/advantage";
