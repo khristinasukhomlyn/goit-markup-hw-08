@@ -1,0 +1,33 @@
+.poftfolio-padding {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+  color: $semidark-color;
+}
+.portfolio-description {
+  font-weight: 400;
+  font-style: 400;
+  font-size: 18px;
+  line-height: 2.33em;
+  letter-spacing: 0.03em;
+  color: $light-color;
+}
+.portfolio-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.03em;
+  color: $main-color;
+}
+
+.items-wrap {
+  flex-wrap: wrap;
+}
