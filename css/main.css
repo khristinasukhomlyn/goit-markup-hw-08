@@ -374,12 +374,10 @@ body {
           align-items: center;
 }
 
-.flexbox-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
+/*.flexbox-list {
   display: flex;
 }
-
+*/
 .flexbox-center {
   display: -webkit-box;
   display: -ms-flexbox;
