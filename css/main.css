@@ -354,6 +354,10 @@ html {
           box-sizing: inherit;
 }
 
+* {
+  outline: 2px solid red;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -379,21 +383,11 @@ body {
 }
 */
 .flexbox-center {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.flexbox-space-between {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .section {
@@ -541,7 +535,6 @@ body {
   border: 1px solid #2196f3;
   border-radius: 4px;
   padding: 10px 32px;
-  margin-left: 495px;
   margin-top: 44px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -565,9 +558,7 @@ body {
 }
 
 .menu-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .menu-item:not(:last-child) {
@@ -1335,7 +1326,6 @@ body {
 }
 
 .teammembers-box {
-  width: 272px;
   border-radius: 4px;
   background-color: #ffffff;
   overflow: hidden;

@@ -7,6 +7,10 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  outline: 2px solid red;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -26,12 +30,9 @@ body {
 }
 */
 .flexbox-center {
+  flex-wrap: wrap;
   display: flex;
-  justify-content: center;
-}
-.flexbox-space-between {
-  display: flex;
-  justify-content: space-between;
+  //justify-content: center;
 }
 
 .section {
