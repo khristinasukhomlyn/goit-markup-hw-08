@@ -1,0 +1,35 @@
+.socialfooter-icons-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: $light-color;
+
+  &:hover .socialfooter-icon {
+    fill: $light-color;
+  }
+  &:hover {
+    background-color: $accent-color;
+  }
+}
+
+.socialfooter-item {
+  margin-top: 20px;
+  margin-bottom: 23px;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.social-footer {
+  margin-right: 10px;
+  margin-top: 21px;
+
+  &-item {
+    margin: 20px;
+  }
+}
