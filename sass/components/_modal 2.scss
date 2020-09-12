@@ -1,0 +1,239 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal-icon {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  transition: fill 250ms $timing-function;
+}
+
+.modal-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.06em;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  background-color: $accent-color;
+  color: $light-color;
+  padding: 10px 32px;
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+  transition: color 250ms $timing-function;
+  transition: background-color 250ms $timing-function;
+  margin-left: 164px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.modal-terms-text {
+  font-style: 400;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714em;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: #2196f3;
+  margin-left: 10px;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: $light-color;
+  color: $accent-color;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $semidark-color;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.form-field {
+  position: relative;
+  padding-top: 30px;
+  transition: border-color 250ms $timing-function;
+}
+
+.form-lable {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167em;
+  letter-spacing: 0.01em;
+  color: $main-color;
+}
+
+.phone-lable {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact-us-field {
+  width: 450px;
+  height: 40px;
+  border: 1px solid $main-color;
+  border-color: $main-color;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.142em;
+  letter-spacing: 0.01em;
+  padding-left: 30px;
+  transition: border-color 250ms $timing-function;
+  outline: none;
+}
+
+.form-field:hover .contact-us-field,
+.form-field:focus .contact-us-field,
+.form-field:active .contact-us-field {
+  border-color: $accent-color;
+  fill: $accent-color;
+}
+
+.form-field:hover,
+.form-field:focus,
+.form-field:active {
+  fill: $accent-color;
+}
+
+.contact-us-message {
+  width: 450px;
+  height: 125px;
+  border: 1px solid;
+  border-color: $main-color;
+  border-radius: 4px;
+  padding-top: 9px;
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1, 142em;
+  letter-spacing: 0.01em;
+  outline: none;
+}
+
+.contact-us-message:hover,
+.contact-us-message:focus,
+.contact-us-message:active {
+  border-color: $accent-color;
+}
+
+.contact-us-field::placeholder {
+  font-style: 400;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.comment-window {
+  width: 450px;
+  height: 120px;
+  border: 1px solid $main-color;
+  border-radius: 4px;
+  margin-left: 40px;
+}
+
+.modalwindow-text {
+  color: $main-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 142;
+  letter-spacing: 0.01em;
+}
+
+/* Чекбокс*/
+
+.li {
+  margin-bottom: 10px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border: 2px solid #2a2a2a;
+  border-radius: 4px;
+  transition: transform 250ms;
+}
+
+.checkbox:checked + .icon {
+  transform: scale(1.2);
+  border-color: transparent;
+  background-color: $accent-color;
+  background-image: url("../imagespage1/icon\ check.svg");
+  background-size: contain;
+  background-origin: border-box;
+}
+/* кнопка "Закрыть" в модальном окне*/
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: $light-color;
+  border: 1px solid $main-color;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.icon-close {
+  fill: $dark-color;
+
+  transition: fill 250ms $timing-function;
+}
+
+.close-btn:hover .icon-close {
+  fill: $accent-color;
+}

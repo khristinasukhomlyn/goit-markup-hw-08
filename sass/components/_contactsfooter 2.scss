@@ -3,9 +3,7 @@
 }
 .adress-box {
   padding-top: 40px;
-  text-align: center;
 }
-
 
 %description-style {
   font-style: normal;
@@ -19,7 +17,6 @@
 .adress-footer-description {
   @extend %description-style;
   color: $light-color;
-  justify-content: center;
 }
 
 .contacts-description {

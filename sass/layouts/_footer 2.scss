@@ -1,7 +1,5 @@
 .footer-box {
-  //width: calc((100% - 30px) / 2);
-  text-align: center;
-  padding-bottom: 60px;
+  width: calc((100% - 30px) / 2);
 }
 .footer-width {
   width: 1200px;
@@ -9,7 +7,6 @@
 .footer-title {
   @extend %title-style;
   color: $light-color;
-  
 }
 
 .footer-section {
@@ -17,5 +14,4 @@
   margin-left: auto;
   background-color: $background-color;
   padding: 60 0 0 0;
-  align-items: center;
 }
