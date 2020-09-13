@@ -1,7 +1,18 @@
 .menu-list {
-  display: none
-  //display: flex;
+  @include for-size(tablet-portrait) {
+    display: none;
+
+  }
+  @include for-size(tablet-landscape) {
+    display: flex;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
+
+
 .menu-item:not(:last-child) {
   margin-right: 30px;
 }

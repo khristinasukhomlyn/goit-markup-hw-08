@@ -40,7 +40,19 @@
   border: 1px solid $accent-color;
   border-radius: 4px;
   padding: 10px 32px;
-  margin-left: 125px;
+  
+  @include for-size(tablet-portrait) {
+    margin-left: 125px;
+  }
+
+  @include for-size(tablet-landscape) {
+    margin-left: 284px;
+  }
+
+  @include for-size(desktop) {
+   margin-left: 700px;;
+  }
+  
   margin-top: 44px;
   transition: background-color 250ms $timing-function;
   transition: color 250ms $timing-function;

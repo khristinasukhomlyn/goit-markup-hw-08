@@ -36,14 +36,14 @@
 
       <section>
         <address>
-          <ul class="list contacts-list menu-list">
-            <li class="contacts-item">
+          <ul class="list menu-list contacts-list">
+            <li class="">
               <a href="info@devstudio.com" class="contacts-link e-mail-link">
                 <svg class="mail-icon" width="16" height="11">
                 <use href="./icons/sprite.svg#icon-mail"></use>
               </svg>info@devstudio.com</a>
             </li>
-            <li class="contacts-item">
+            <li class="">
               <a href="tel:+380961111111" class="contacts-link"><svg class="mail-icon" width="10" height="15">
                 <use href="./icons/sprite.svg#icon-smartphone"></use>
               </svg>+38 096 111 11 11</a>
@@ -125,15 +125,15 @@
     <section class="section product-padding">
       <div class="container">
         <ul class="list">
-          <div class="flexbox-list">
-            <li class="team-item">
+          <div class="advantage-flexbox">
+            <li class="advantage-item">
               <h3 class="advantage-title advantage-lokator">Внимание к деталям</h3>
               <p class="advantage-description">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="team-item">
+            <li class="advantage-item">
 
               <h3 class="advantage-title advantage-clock">Пунктуальность</h3>
               <p class="advantage-description">
@@ -141,7 +141,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="team-item">
+            <li class="advantage-item">
 
               <h3 class="advantage-title advantage-diagram">Планирование</h3>
               <p class="advantage-description">
@@ -149,8 +149,7 @@
                 степени обуславливает
               </p>
             </li>
-            <li>
-
+            <li class="advantage-item">
               <h3 class="advantage-title advantage-cosmo">Современные технологии</h3>
               <p class="advantage-description">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -162,11 +161,11 @@
       </div>
     </section>
     <!--Продукт-->
-    <!--<section class="section padding-section">
+    <section class="section padding-product-section">
       <div class="container">
         <h2 class="product-header">Чем мы занимаемся?</h2>
         <ul class="list">
-          <div class="flexbox-list">
+          <div class="product-flexbox">
             <li class="team-item">
               <div class="product">
               <img class="img" src="./imagespage1/activitiesphoto/img1.jpg" width="370" height="294"
@@ -200,15 +199,15 @@
           </div>
         </ul>
       </div>
-    </section>-->
+    </section>
     <!--Команда-->
     <section class="team-section padding-section">
       <div class="container">
         <h2 class="team-header">Наша команда</h2>
-        <ul class="list flexbox">
-          <div class="flexbox-list">
-            <li class="team-item teammembers-box">
-              <img class="img" src="./imagespage1/teamphoto/img1.jpg" width="450" height="622"
+        <ul class="list">
+          <div class="team-flexbox">
+            <li class="team-item teammembers-box teamm-item">
+              <img class="img" src="./imagespage1/teamphoto/img1.jpg" 
                 alt="Николай Кучеренко" />
               <h3 class="name-title">Николай Кучеренко</h3>
               <p class="name-description">Product Designer</p>
@@ -243,8 +242,8 @@
                 </li>
               </ul>
             </li>
-            <li class="team-item teammembers-box">
-              <img class="img" src="./imagespage1/teamphoto/img2.jpg" width="450" height="622" alt="Ольга Иванова" />
+            <li class="team-item teammembers-box teamm-item">
+              <img class="img" src="./imagespage1/teamphoto/img2.jpg" alt="Ольга Иванова" />
               <h3 class="name-title">Ольга Иванова</h3>
               <p class="name-description">Frontend Developer</p>
               <ul class="list socialflexbox-center">
@@ -278,8 +277,8 @@
                 </li>
               </ul>
             </li>
-            <li class="team-item teammembers-box">
-              <img class="img" class="img" src="./imagespage1/teamphoto/img3.jpg" width="450" height="622"
+            <li class="team-item teammembers-box teamm-item">
+              <img class="img" class="img" src="./imagespage1/teamphoto/img3.jpg"
                 alt="Андрей Шевченко" />
               <h3 class="name-title">Андрей Шевченко</h3>
               <p class="name-description">Marketing</p>
@@ -314,8 +313,8 @@
                 </li>
               </ul>
             </li>
-            <li class="team-item teammembers-box">
-              <img class="img" src="./imagespage1/teamphoto/img4.jpg" width="450" height="622" alt="Иван Николаев" />
+            <li class="team-item teammembers-box teamm-item">
+              <img class="img" src="./imagespage1/teamphoto/img4.jpg" alt="Иван Николаев" />
               <h3 class="name-title">Иван Николаев</h3>
               <p class="name-description">UI Designer</p>
               <ul class="list socialflexbox-center">
@@ -405,12 +404,12 @@
     </section>
   </main>
   <!--Подвал-->
-  <footer class="footer-section flexbox-list">
-      <div class="section flexbox-list">
-        <div class="flexbox-list footer-box">
+  <footer class="footer-section footer-flexbox">
+      <div class="section footer-flexbox-one">
+        <div class="footer-flexbox-two footer-box">
           <div class="adress-box">
             <h2 hidden class="contacts-header">Контакты</h2>
-            <p class="logo">
+            <p class="logo-footer">
               <span class="logo-part-one-footer">Web</span>
               <span class="logo-part-two-footer">Studio</span>
             </p>
@@ -471,12 +470,12 @@
 
         <div class="sign-up-box container">
           <b class="footer-title">Подпишитесь на рассылку</b>
-          <div class="flexbox-list">
-            <form id="e-mail-form">
+          <div class="footer-flexbox">
+            <form id="">
             <input type="email" class="e-mail-field"  placeholder="E-mail" name="user-email-footer">
             </form>
-            <button class="btn adress-margin">
-              <span class="flexbox-list">Подписаться
+            <button class="btn adress-margin footer-flexbox">
+              <span class="footer-flexbox">Подписаться
                 <svg class="galka-icon" width="24" height="24">
                   <use href="./icons/sprite.svg#icon-galka"></use>
                 </svg>

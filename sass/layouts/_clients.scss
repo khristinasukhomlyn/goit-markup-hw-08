@@ -1,5 +1,16 @@
 .clients-box {
-  width: 208px;
+  @include for-size(tablet-portrait) {
+    width: 208px;
+  }
+
+  @include for-size(tablet-landscape) {
+    width: 208px;
+  }
+
+  @include for-size(desktop) {
+    width: 170px;
+  }
+  
   height: 90px;
   padding: 19px;
   margin-top: 30px;

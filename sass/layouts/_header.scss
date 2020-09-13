@@ -1,5 +1,25 @@
 .page-header {
-  padding: 15px 0 15px 0;
+
+  @include for-size(tablet-portrait) {
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+  }
+
+  @include for-size(tablet-landscape) {
+    padding-top: 25px;
+    padding-right: 0px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+  }
+  @include for-size(desktop) {
+    padding-top: 25px;
+    padding-right: 0px;
+    padding-bottom: 25px;
+    padding-left: 215px;
+  }
+
   border-bottom: 1px solid $border-color;
 }
 
@@ -8,44 +28,12 @@
   align-items: center;
   margin-right: auto;
 }
-.e-mail-link {
-  margin-right: 30px;
-}
+
 
 .list {
   list-style: none;
   padding: 0px;
   margin: 0px;
-}
-
-.contacts-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143em;
-  letter-spacing: 0.02em;
-  color: $main-color;
-  text-decoration: none;
-  transition: color 250ms $timing-function;
-
-  &:hover {
-    color: $accent-color;
-    fill: $accent-color;
-  }
-}
-.contacts-list {
-  font-style: normal;
-
-  &:hover {
-    color: $accent-color;
-    fill: $accent-color;
-  }
-}
-
-.mail-icon {
-  margin-right: 10px;
-  transition: fill 250ms timing-function;
 }
 
 .portfolio-link {
@@ -54,6 +42,3 @@
   text-decoration: none;
 }
 
-.white-title {
-  color: $light-color;
-}

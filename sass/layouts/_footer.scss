@@ -1,5 +1,8 @@
 .footer-box {
-  //width: calc((100% - 30px) / 2);
+  
+  @include for-size(desktop) {
+    width: calc((100% - 30px) / 2);
+  }
   text-align: center;
   padding-bottom: 60px;
 }
@@ -16,6 +19,28 @@
   margin-right: auto;
   margin-left: auto;
   background-color: $background-color;
-  padding: 60 0 0 0;
+  padding-top: 60px;
   align-items: center;
+  display: flex;
+}
+.footer-flexbox-one {
+ 
+  @include for-size(desktop) {
+    display: flex;
+  }
+  
+}
+
+.footer-flexbox-two   {
+
+@include for-size(tablet-landscape) {
+  display: flex;
+}
+@include for-size(desktop) {
+  display: flex;
+}
+
+.footer-flexbox {
+  display: flex;
+}
 }

@@ -9,8 +9,20 @@
   opacity: 0;
   pointer-events: none;
 }
-.product-padding {
-  padding-top: 60px 0px;
+.padding-product-section {
+  @include for-size(tablet-portrait) {
+    padding-top: 0px 0px;
+  }
+
+  @include for-size(tablet-landscape) {
+    padding-top: 0px 0px;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
 }
 .product-overlay {
   position: absolute;
@@ -36,14 +48,48 @@
 }
 
 .product-header {
+  
   @extend %header-style;
+
+  @include for-size(tablet-portrait) {
+    display: none;
+  }
+
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
+
+  @include for-size(desktop) {
+    display: block;
+  }
 }
+
+
+
+
+.product-flexbox {
+
+  @include for-size(tablet-portrait) {
+    display: none;
+  }
+
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
 
 .product-title-absolute {
   position: absolute;
   background: rgba(47, 48, 58, 0.8);
   height: 70px;
-  width: auto;
+  width: 370px;
   padding-top: 7px;
   bottom: 0;
 }

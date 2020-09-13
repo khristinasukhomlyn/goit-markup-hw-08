@@ -1,14 +1,51 @@
 .advantage-box {
-  width: 270px;
-  padding: 25px 100px;
+  @include for-size(tablet-portrait) {
+    width: 450px;
+  }
+
+  @include for-size(tablet-landscape) {
+    width: 350px;
+  }
+
+  @include for-size(desktop) {
+    width: 270px;
+  }
+  //padding: 25px 100px;
   margin-bottom: 30px;
   background-color: $backround-light;
 }
-
-.advantage-title {
-  @extend %title-style;
-  color: $semidark-color;
+.advantage-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+.advantage-item {
+  @include for-size(tablet-portrait) {
+    width: 450px;
+  }
+
+  @include for-size(tablet-landscape) {
+    width: 350px;
+  }
+
+  @include for-size(desktop) {
+    width: 270px;
+    
+  }
+
+
+  //&:not(:last-child) {
+    //@include for-size(desktop) {
+  
+     // margin-right: 30px;
+    
+    
+}
+
+
+
+
 
 .advantage-description {
   @extend %text-style;
@@ -18,7 +55,17 @@
 .advantage-lokator:before {
   content: " ";
   display: block;
-  width: 450px;
+  @include for-size(tablet-portrait) {
+    width: 450px;
+  }
+
+  @include for-size(tablet-landscape) {
+    width: 350px;
+  }
+
+  @include for-size(desktop) {
+    width: 270px;
+  }
   height: 120px;
   background-image: url(../imagespage1/advantagephoto/lokator.svg);
   background-position: 50% 50%;
@@ -30,7 +77,18 @@
 .advantage-clock:before {
   content: " ";
   display: block;
-  width: 450px;
+  @include for-size(tablet-portrait) {
+    width: 450px;
+  }
+
+  @include for-size(tablet-landscape) {
+    width: 350px;
+  }
+
+  @include for-size(desktop) {
+    width: 270px;
+  }
+  
   height: 120px;
   background-image: url(../imagespage1/advantagephoto/clock.svg);
   background-position: 50% 50%;
@@ -42,7 +100,17 @@
 .advantage-diagram:before {
   content: " ";
   display: block;
-  width: 450px;
+  @include for-size(tablet-portrait) {
+    width: 450px;
+  }
+
+  @include for-size(tablet-landscape) {
+    width: 350px;
+  }
+
+  @include for-size(desktop) {
+    width: 270px;
+  }
   height: 120px;
   background-image: url(../imagespage1/advantagephoto/diagram.svg);
   background-position: 50% 50%;
@@ -55,7 +123,17 @@
 .advantage-cosmo:before {
   content: " ";
   display: block;
-  width: 450px;
+  @include for-size(tablet-portrait) {
+    width: 450px;
+  }
+
+  @include for-size(tablet-landscape) {
+    width: 350px;
+  }
+
+  @include for-size(desktop) {
+    width: 270px;
+  }
   height: 120px;
   background-image: url(../imagespage1/advantagephoto/cosmo.svg);
   background-position: 50% 50%;

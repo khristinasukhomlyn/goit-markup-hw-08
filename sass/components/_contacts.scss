@@ -1,0 +1,49 @@
+.contacts-list { 
+  @include for-size(tablet-portrait) {
+    display: none;
+   }
+
+ @include for-size(tablet-landscape) {
+   display: flex;
+   flex-wrap: wrap;
+  
+   }
+
+ @include for-size(desktop) {
+    display: flex;
+   }
+
+}
+.mail-icon {
+  margin-right: 10px;
+  transition: fill 250ms $timing-function;
+}
+.contacts-link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143em;
+    letter-spacing: 0.02em;
+    color: $main-color;
+    text-decoration: none;
+    @include for-size(tablet-landscape) {
+      margin-left: 80px;
+    }
+    transition: color 250ms $timing-function;
+  
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+}
+
+
+.e-mail-link {
+  @include for-size(desktop) {
+    margin-left: 30px;
+      }
+  }
+
+  

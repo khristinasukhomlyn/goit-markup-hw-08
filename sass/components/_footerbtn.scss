@@ -12,8 +12,20 @@
   padding: 10px 32px;
   border: 1px solid $accent-color;
   border-radius: 4px;
-  margin-left: 125px;
+
+  @include for-size(tablet-portrait) {
+    margin-left: 115px;
+  }
+
+  @include for-size(tablet-landscape) {
+    margin-left: 275px;
+  }
+
+  @include for-size(desktop) {
+    margin-left: 18px;
+  }
   
+
   transition: background-color 250ms $timing-function;
   transition: color 250ms $timing-function;
 
