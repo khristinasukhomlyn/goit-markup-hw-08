@@ -18,4 +18,23 @@
     background-color: $accent-color;
     color: $light-color;
   }
+
+  &-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
+
+.portfoliobtn-margin {
+
+
+  @include for-size(tablet-landscape) {
+    margin-left: 65px;
+  }
+
+  @include for-size(desktop) {
+   margin-left: 485px;
+  }
+
 }

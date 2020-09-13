@@ -436,6 +436,12 @@ body {
   display: inline-block;
 }
 
+.footer-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;

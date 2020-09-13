@@ -1,5 +1,6 @@
 .works-box {
-  width: 370px;
+  width: 450px;
+  //width: 370px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   transition: box-shadow 250ms $timing-function;
@@ -10,7 +11,21 @@
 }
 
 .works-width {
-  width: calc((100% - 60px) / 3);
+  @include for-size(tablet-portrait) {
+    width: 450px;
+  }
+
+  @include for-size(tablet-landscape) {
+    width: 354px;
+   
+  }
+
+  @include for-size(desktop) {
+     width: calc((100% - 60px) / 3);
+  
+    }
+  
+  
 }
 
 .works-box:hover {
@@ -31,8 +46,8 @@
 }
 
 .flexbox-space-between {
-  //display: flex;
-  //justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .portfolio-link:hover .work-actions {
   opacity: 1;
