@@ -11,6 +11,33 @@
  }
 }
 
+.menu-container {
+
+  @include for-size(tablet-portrait) 
+
+  {justify-content: space-between;
+    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 100px;
+    left: 0;
+    background: $light-color;
+    text-align: center;
+    display: none;
+   }
+
+   &.is-open {
+       display: block;  
+   }
+   @include for-size(tablet-landscape) {
+       display: none;
+   }
+
+   @include for-size(desktop) {
+       display: none;
+   }
+}
 
 .menu-item:not(:last-child) {
   margin-right: 30px;

@@ -2,7 +2,7 @@
 
     @include for-size(tablet-portrait) {
     display: inline-flex;
-    margin: 0;
+    margin-left: 270px;
     padding: 0;
     border: none;
     background-color: transparent;
@@ -13,7 +13,7 @@
     }
     
     @include for-size(desktop) {
-        ddisplay: none;
+        display: none;
     }
     
   &.icon-cross {
@@ -26,33 +26,9 @@
 
  &.is-open .icon-menu {
   display: none;
+ }
 }
-
-
-.menu-container {
-   @include for-size(tablet-portrait) 
-
-   {justify-content: space-between;
-     flex-grow: 1;
-     position: absolute;
-     width: 100%;
-     height: 400px;
-     top: 100px;
-     left: 0;
-     background: $light-color;
-     text-align: center;
-     display: none;
-    }
-
-    &.is-open {
-        display: block;  
-    }
-    @include for-size(tablet-landscape) {
-        display: none;
-    }
-
-    @include for-size(desktop) {
-        ddisplay: none;
-    }
-}
+.menu-button:hover,
+.menu-button:focus .icon-menu {
+    fill: $accent-color;
 }

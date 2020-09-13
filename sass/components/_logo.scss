@@ -1,5 +1,6 @@
 .logo {
   font-family: "Raleway", sans-serif;
+  display: flex;
   @include for-size(tablet-portrait) {
     margin-right: 0px;
   }
