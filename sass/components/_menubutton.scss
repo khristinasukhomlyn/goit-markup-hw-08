@@ -1,77 +1,58 @@
 .menu-button {
+
+    @include for-size(tablet-portrait) {
     display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
-  
-    @media screen and (min-width: 768px) {
-      display: none;
     }
-  }
-  .menu-button .icon-cross {
+    
+    @include for-size(tablet-landscape) {
+        display: none;
+    }
+    
+    @include for-size(desktop) {
+        ddisplay: none;
+    }
+    
+  &.icon-cross {
   display: none;
-}
+ }
 
-.menu-button.is-open .icon-cross {
+  &.is-open .icon-cross {
   display: block;
-}
+ }
 
-.menu-button.is-open .icon-menu {
+ &.is-open .icon-menu {
   display: none;
 }
 
 
 .menu-container {
-    //@include for-size(tablet-portrait){
-    @media screen and (max-width: 767px) {
-    justify-content: space-between;
-    flex-grow: 1;
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    top: 100px;
-    left: 0;
-    background: $light-color;
-    text-align: center;
-    display: none;
-    &.is-open {
-      display: block;
+   @include for-size(tablet-portrait) 
+
+   {justify-content: space-between;
+     flex-grow: 1;
+     position: absolute;
+     width: 100%;
+     height: 400px;
+     top: 100px;
+     left: 0;
+     background: $light-color;
+     text-align: center;
+     display: none;
     }
-    @media screen and (min-width: 768px) {
+
+    &.is-open {
+        display: block;  
+    }
+    @include for-size(tablet-landscape) {
         display: none;
-        
-      }
+    }
 
+    @include for-size(desktop) {
+        ddisplay: none;
+    }
 }
-}
-
-
-  
-  
-
-    
-   
-
-   
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-  }
-}*/
-
-.navigation,
-.contacts {
-  height: 50px;
-  width: 140px;
-}
-
-.navigation {
-  outline: 1px solid teal;
-}
-
-.contacts {
-  outline: 1px solid orange;
 }
