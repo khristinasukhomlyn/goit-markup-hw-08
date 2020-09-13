@@ -1,6 +1,6 @@
 .contacts-list { 
   @include for-size(tablet-portrait) {
-    display: none;
+    display: block;
    }
 
  @include for-size(tablet-landscape) {
