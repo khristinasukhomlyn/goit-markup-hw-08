@@ -26,15 +26,3 @@
   }
 }
 
-.portfoliobtn-margin {
-
-
-  @include for-size(tablet-landscape) {
-    margin-left: 65px;
-  }
-
-  @include for-size(desktop) {
-   margin-left: 485px;
-  }
-
-}

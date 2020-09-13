@@ -33,3 +33,23 @@
 .items-wrap {
   flex-wrap: wrap;
 }
+
+.portfoliobtn-flexbox {
+
+  @include for-size(tablet-portrait) {
+    display: flex;
+    justify-content: start;
+    }
+  
+  @include for-size(tablet-landscape) {
+      display: flex;
+      justify-content: center;
+     
+    }
+  
+  @include for-size(desktop) {
+      display: flex;
+      justify-content: center;
+      }
+
+}
