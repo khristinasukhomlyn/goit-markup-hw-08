@@ -13,13 +13,14 @@
 
 .menu-container {
 
-  @include for-size(tablet-portrait) 
-
-  {justify-content: space-between;
+  @include for-size(tablet-portrait) {
+   justify-content: space-between;
     flex-grow: 1;
     position: absolute;
     width: 100%;
     height: 400px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     top: 100px;
     left: 0;
     background: $light-color;
@@ -30,18 +31,31 @@
    &.is-open {
        display: block;  
    }
+
    @include for-size(tablet-landscape) {
-       display: none;
-   }
+     display: flex;
+     justify-content: space-between;
+    
+     }   
+  
 
    @include for-size(desktop) {
-       display: none;
+     display: flex;
+     justify-content: space-between;
+    
    }
 }
 
 .menu-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.menu-item {
+  @include for-size(tablet-landscape) {
+  margin-bottom: 60px;
+}
+}
+
 .menu-link {
   font-family: "Roboto", sans-serif;
   position: relative;
