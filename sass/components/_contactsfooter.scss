@@ -4,8 +4,7 @@
 .adress-box {
   //padding-top: 40px;
   text-align: center;
- 
-  @include for-size(tablet-landscape) {
+  @media screen and (min-width: 768px) {
    width: 389px;
   }
   

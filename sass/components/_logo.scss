@@ -1,14 +1,14 @@
 .logo {
   font-family: "Raleway", sans-serif;
   display: flex;
-  @include for-size(tablet-portrait) {
+  @media screen and (min-width: 480px) {
     margin-right: 0px;
   }
-  @include for-size(tablet-landscape) {
+  @media screen and (min-width: 768px) {
     margin-right: 85px;
     display: flex;
   }
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     margin-right: 85px;
   }
   font-weight: 700px;
@@ -39,10 +39,10 @@
   letter-spacing: 0.03em;
   margin-top: 0px;
 
-  @include for-size(tablet-portrait) {
+  @media screen and (min-width: 480px) {
      text-align: center;
     }
-  @include for-size(tablet-portrait) {
+    @media screen and (min-width: 480px) {
       text-align: center;
     }
 }

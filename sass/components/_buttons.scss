@@ -33,7 +33,7 @@
   font-size: 16px;
   line-height: 1.875em;
   letter-spacing: 0.06em;
-  display: flex;
+  
   text-align: center;
   background-color: $accent-color;
   color: $light-color;
@@ -41,16 +41,18 @@
   border-radius: 4px;
   padding: 10px 32px;
   
-  @include for-size(tablet-portrait) {
+
+
+  @media screen and (min-width: 480px) {
     margin-left: 125px;
   }
-
-  @include for-size(tablet-landscape) {
+  
+  @media screen and (min-width: 768px) {
     margin-left: 284px;
   }
-
-  @include for-size(desktop) {
-   margin-left: 700px;;
+  
+  @media screen and (min-width: 1200px) {
+    margin-left: 700px;
   }
   
   margin-top: 44px;

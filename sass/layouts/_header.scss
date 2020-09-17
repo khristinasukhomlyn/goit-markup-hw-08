@@ -1,6 +1,6 @@
 .page-header {
 
-  @include for-size(tablet-portrait) {
+  @media screen and (min-width: 480px) {
     padding-top: 15px;
     padding-right: 0px;
     padding-bottom: 15px;
@@ -8,13 +8,13 @@
     position: relative;
   }
 
-  @include for-size(tablet-landscape) {
+  @media screen and (min-width: 768px) {
     padding-top: 25px;
     padding-right: 0px;
     padding-bottom: 25px;
     padding-left: 0px;
   }
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     padding-top: 25px;
     padding-right: 0px;
     padding-bottom: 25px;
@@ -22,28 +22,29 @@
   }
 
   border-bottom: 1px solid $border-color;
-
-  
-
 }
 
-/*.page-header .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-height: 80px;
-}*/
 
 .navigation {
   display: flex;
   align-items: center;
   margin-right: auto;
+
+ @media screen and (max-width: 480px) {
+   width: 100%;
+  }
+  
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
+
 }
 
 

@@ -13,17 +13,17 @@
   border: 1px solid $accent-color;
   border-radius: 4px;
 
-  @include for-size(tablet-portrait) {
+  @media screen and (min-width: 480px) {
     margin-left: 115px;
     display: block;;
   }
 
-  @include for-size(tablet-landscape) {
+  @media screen and (min-width: 768px) {
     margin-left: 275px;
     display: block;
   }
 
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     margin-left: 18px;
     display: flex;
   }

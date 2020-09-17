@@ -1,6 +1,6 @@
 .footer-box {
   
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     width: calc((100% - 30px) / 2);
   }
   text-align: center;
@@ -25,7 +25,7 @@
 }
 .footer-flexbox-one {
  
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
   
@@ -33,10 +33,10 @@
 
 .footer-flexbox-two   {
 
-@include for-size(tablet-landscape) {
+  @media screen and (min-width: 768px) {
   display: flex;
 }
-@include for-size(desktop) {
+@media screen and (min-width: 1200px){
   display: flex;
 }
 

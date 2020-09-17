@@ -1,13 +1,14 @@
 .e-mail-field {
-  @include for-size(tablet-portrait) {
-    width: 358px;
-  }
 
-  @include for-size(tablet-landscape) {
+  @media screen and (min-width: 480px) {
+    width: 358px; 
+  }
+  
+  @media screen and (min-width: 768px) {
     width: 450px;
   }
-
-  @include for-size(desktop) {
+  
+  @media screen and (min-width: 1200px) {
     width: 358px;
   }
   
@@ -43,29 +44,30 @@
 
 .join-us-box {
 
-  @include for-size(tablet-portrait) {
+  @media screen and (min-width: 480px) {
     //margin-top: 50px;
   }
-
-  @include for-size(tablet-landscape) {
+  
+  @media screen and (min-width: 768px) {
     width: 389px;
     //text-align: center;
   }
-
-  @include for-size(desktop) {
-    //margin-top: 50px;
-    text-align: center;
-    width: 206px;
-   //margin-bottom: 100px;
-   margin-left: 68px;
+  
+  @media screen and (min-width: 1200px) {
+      //margin-top: 50px;
+      text-align: center;
+      width: 206px;
+     //margin-bottom: 100px;
+     margin-left: 68px;
   }
+  
 }
   
   
 
 
 .sign-up-box {
-   @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     
    //width: calc((100% - 30px) / 2);
     width: auto;

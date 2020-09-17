@@ -10,15 +10,15 @@
   pointer-events: none;
 }
 .padding-product-section {
-  @include for-size(tablet-portrait) {
+  @media screen and (min-width: 480px) {
     padding-top: 0px 0px;
   }
 
-  @include for-size(tablet-landscape) {
+  @media screen and (min-width: 768px) {
     padding-top: 0px 0px;
   }
 
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -51,15 +51,19 @@
   
   @extend %header-style;
 
-  @include for-size(tablet-portrait) {
+  @media screen and (max-width: 480px) {
     display: none;
   }
 
-  @include for-size(tablet-landscape) {
+  @media screen and (min-width: 480px) {
     display: none;
   }
 
-  @include for-size(desktop) {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: block;
   }
 }
@@ -69,17 +73,24 @@
 
 .product-flexbox {
 
-  @include for-size(tablet-portrait) {
+
+  
+  @media screen and (min-width: 480px) {
     display: none;
   }
 
-  @include for-size(tablet-landscape) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+    
   }
 
 }
