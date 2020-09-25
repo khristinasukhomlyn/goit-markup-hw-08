@@ -22,6 +22,16 @@
   padding-top: 60px;
   align-items: center;
   display: flex;
+
+  @media (min-width: 320px) {
+    width: 100%;
+    display: block;
+  }
+  @media (min-width: 1200px) {
+    width: 1600px;
+    display: flex;
+  }
+
 }
 .footer-flexbox-one {
  
@@ -30,6 +40,7 @@
   }
   
 }
+
 
 .footer-flexbox-two   {
 
@@ -40,7 +51,18 @@
   display: flex;
 }
 
+
+
 .footer-flexbox {
+  
+
+ @media screen and (min-width: 320px) {
+  display: block;
+ }
+ @media screen and (min-width: 1200px) {
   display: flex;
+
 }
+
+
 }

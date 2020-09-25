@@ -7,9 +7,9 @@ html {
   box-sizing: inherit;
 }
 
-* {
+/** {
   outline: 2px solid tomato;
-}
+}*/
 
 body {
   font-family: "Roboto", sans-serif;
@@ -30,17 +30,34 @@ body {
   display: flex;
   justify-content: center;
 }
-.flexbox-space-between {
+
+/*.flexbox-space-between {
   //display: flex;
   //justify-content: space-between;
-}
+}*/
 
 .section {
  
   margin-right: auto;
   margin-left: auto;
   //padding: 0 15px;
+
+  @media (min-width: 320px) {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+
+  }
+
+
+  @media (min-width: 1200px) {
+   margin-right: auto;
+   margin-left: auto;
+
+  }
+
 }
+
 
 .center {
   text-align: center;
@@ -85,6 +102,18 @@ body {
 .footer-flexbox {
   display: flex;
 }
+
+.footer-column {
+  @media (min-width: 320px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+
+}
+
 body.modal-open {
   overflow: hidden;
 }
@@ -93,4 +122,5 @@ body.modal-open {
   display: block;
   max-width: 100%;
   height: auto;
+}
 }

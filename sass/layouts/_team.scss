@@ -3,6 +3,14 @@
   margin-left: auto;
   background-color: $backround-light;
   padding: 60px 0px;
+
+  @media (min-width: 320px) {
+    width: 100%;
+    }
+
+    @media (min-width: 1200px) {
+      width: 1600px;
+      }
 }
 
 .teammembers-box {
@@ -13,6 +21,10 @@
   &:hover {
     box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
   }
+
+  @media screen and (min-width: 320px){
+    width: 100%;
+ }
 }
 
 .team-header {
@@ -25,21 +37,25 @@
 
   @media screen and (min-width: 480px) {
     display: flex;
-   // flex-wrap: wrap;
+   //flex-wrap: wrap;
    flex-direction: column;
    align-items: center;
   }
   
 
   @media screen and (min-width: 768px) {
-			width: calc((100% - 2 * 30px) / 2);
-			margin:15px;
+      width: calc((100% - 2 * 30px) / 2);
+      margin-left: 0px;
+      margin-right: 0px;
+      flex-direction: row;
+      flex-wrap: wrap;
   }
   
 
   @media screen and (min-width: 1200px){
-      width: calc((100% - 4 * 30px) / 4);
-      }
+    width: calc((100% - 4 * 30px) / 4);
+    flex-direction: row;
+    }
 
  
 }
@@ -47,26 +63,28 @@
 
 .team-img {
   display: block;
- }
+ 
 
 
- @media screen and (min-width: 480px){
+  @media screen and (min-width: 480px) {
   width: 100%;
   height: 460px
-}
+ }
 
-@media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
   height: 374px;
-}
+ }
 
-@media screen and (min-width: 1200px) {
+ @media screen and (min-width: 1200px) {
   
     height: 260px;
-} 
+ } 
 
+}
 
+.team-item {
+  
 
-.teamm-item {
   @media screen and (min-width: 480px){
      margin-right: auto;
 		 margin-left: auto;
@@ -75,6 +93,8 @@
 
   @media screen and (min-width: 768px) {
     width: 350px;
+    margin-right: 0px;
+		margin-left: 0px;
   }
 
   @media screen and (min-width: 1200px) {

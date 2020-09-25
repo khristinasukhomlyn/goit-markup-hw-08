@@ -73,8 +73,6 @@
 
 .product-flexbox {
 
-
-  
   @media screen and (min-width: 480px) {
     display: none;
   }
@@ -85,13 +83,10 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: space-between;
-  }
-
-  @media screen and (max-width: 480px) {
-    display: none;
+    
     
   }
+
 
 }
 
@@ -107,4 +102,13 @@
 .product-title {
   @extend %title-style;
   color: $light-color;
+}
+
+.product-img {
+  display: block;
+  max-width: 370px;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  
 }

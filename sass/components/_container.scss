@@ -5,9 +5,18 @@
   margin-right: auto;
 }
 
+@media screen and (min-width: 320px) {
+  .container {
+    width: 95%;
+   
+    padding: 0;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -21,4 +30,5 @@
   .container {
     width: 1600px;
   }
+}
 }
