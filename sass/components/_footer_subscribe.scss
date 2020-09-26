@@ -1,0 +1,104 @@
+.subscribe{
+	color: $text-white-color;
+	input{
+		height: 50px;
+		background-color: #2f303a;
+		margin-bottom: 0px;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		border-radius: 4px;
+		padding: 15px 16px;
+		color: $text-white-color;
+	
+	  &:focus {
+		border: 1px solid rgba(255, 255, 255, 0.3);}
+	 }
+
+	 .button {
+		display: flex;
+		justify-content: center;
+	
+	 &:hover {
+		background-color: #188ce8;
+		color: $text-white-color;}
+	 }
+	
+	 span {
+		margin-right: 10px;}
+	}
+	
+	
+
+@media screen and (min-width: 480px){
+	.footer{
+	.subscribe{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.subscribe-inbox{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.form-field{
+		margin-bottom: 20px;
+		width: 450px;
+
+	}
+	b{
+		margin-bottom: 20px;
+	}
+	.button {
+		margin-bottom: 60px;
+
+	}
+}
+}
+@media screen and (min-width: 768px){
+	.footer-tabletka {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+}
+@media screen and (min-width: 1200px){
+	/*ФУТР ПОДПИСАТСЯ*/
+	.footer{
+		.subscribe{
+
+			align-items: flex-start;
+		}
+		.socialnetwork-list{
+			margin-right: 93px;
+		}
+		.subscribe-inbox {
+			flex-direction: row;
+			align-content: center;
+
+		.button{
+			margin-bottom: 0
+			;
+		}
+		b  {
+
+		   margin-bottom: 10px;
+		   
+		}
+		.form-field {
+		   margin-right: 12px;
+		   margin-bottom: 0px;
+		   width: 358px;
+		}
+
+		.subs {
+		   width: 200px;
+		   height: 50px;
+		}
+		.subscribe-inbox {
+		   display: flex;
+		}
+	   }
+	}
+
+	
+}

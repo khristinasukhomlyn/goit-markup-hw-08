@@ -1,0 +1,23 @@
+.button {
+	display: inline-block;
+	border: 0px;
+	margin-top: 0px;
+	padding: 10px 32px;
+	border-radius: 4px;
+	align-items: center;
+	text-align: center;
+
+	color: $text-white-color;
+	background-color: $acent-text-color;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.875;
+	letter-spacing: 0.06em;
+
+	transition: background-color 250ms $timeline, color 250ms $timeline;
+
+ &:hover,
+ &:focus {
+	color: $acent-text-color;
+	background-color: $text-white-color;}
+}

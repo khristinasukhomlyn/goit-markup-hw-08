@@ -1,0 +1,37 @@
+
+.footer {
+	padding-top: 60px;
+	background-color: #2f303a;
+
+}
+@media screen and (min-width: 480px){
+	.footer{
+		.conteiners{
+			width: 480px;
+			margin-right: auto;
+			margin-left: auto;
+
+		}
+	}
+
+
+}
+@media screen and (min-width: 768px){
+	.footer{
+		.conteiners{
+			width: 768px;
+		}
+	}
+}
+@media screen and (min-width: 1200px){
+	/*футер*/
+ .footer {
+	height: 252px;
+	.conteiners{
+		width: 1200px;
+		display: flex;
+	}
+
+	}
+ 
+ }

@@ -1,0 +1,56 @@
+.work{
+	display: none
+	;
+}
+
+
+
+@media screen and (min-width: 1200px){
+	/*чем мы занимаемся*/
+.work {
+	display: block;
+	padding-top: 94px;
+	padding-bottom: 94px;
+
+ .title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	margin-bottom: 50px;
+ }
+
+ .list {
+	display: flex;
+ }
+
+ .sub-title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: $text-white-color;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: roboto, sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.145;
+
+	width: 370px;
+	height: 70px;
+
+	background: rgba(47, 48, 58, 0.8);}
+/*чем мы занимаемся - карточки*/
+ .item {
+	position: relative;
+	max-width: 370px;
+  &:not(:last-child) {
+	margin-right: 30px;
+  }	
+ }
+}
+	
+}

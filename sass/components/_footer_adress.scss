@@ -1,0 +1,75 @@
+.footer{
+	.logo {
+		display: block;
+		margin-bottom: 20px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.166;
+		color: $text-white-color;
+		text-decoration: none;
+	 }
+	 
+	.contact {
+		color: $secondary-text-color;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.71;
+		text-decoration: none;
+	 }
+	 .adress {
+		color: $text-white-color;
+		display: flex;
+		margin-bottom: 9px;}
+	 .phone {
+		display: flex;
+		margin-bottom: 9px;}
+	
+	
+}
+
+@media screen and (min-width: 480px){
+	.footer{
+
+		.contact-info{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 60px;
+			address{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		}
+	}
+
+@media screen and (min-width: 768px){
+	.footer{
+
+	}
+	
+}
+@media screen and (min-width: 1200px){
+	
+/*футре - столбец адресов*/
+.footer {
+
+	.logo{
+		font-size: 26px;
+		line-height: 1.192;
+	}
+	.contact-info {		
+	   display: block;
+	   margin-right:80px;
+		address{
+			align-items: flex-start;
+		}
+
+	}
+}
+	 
+}

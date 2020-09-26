@@ -1,0 +1,127 @@
+.projects {
+	.item {
+		border: 1px solid #eeeeee;
+		transition: box-shadow 250ms $timeline;
+	  &:hover,
+	  &:focus {
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	 	}
+	}
+	.thumb {
+		position: relative;
+		overflow: hidden;
+	 } 
+	.project-img {
+		width: 100%;
+	 }
+	.description {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		pointer-events: none;
+		transform: translateY(100%);
+		transition: transform 250ms $timeline, opacity 250ms $timeline;
+	
+		background: rgba(33, 150, 243, 0.9);
+		color: $text-white-color;
+		padding: 63px 24px;
+		font-family: Roboto;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.56;
+		letter-spacing: 0.03em;
+	}
+	 .item:hover .description,
+	 .item:focus .description {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	 .inbox-description {
+		width: 100%;
+		padding-top: 20px;
+		padding-left: 24px;
+		padding-right: 24px;
+		padding-bottom: 20px;
+	
+	
+	  h3 {
+		color: $main-text-color;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 2;
+	
+		letter-spacing: 0.06em;
+	  }
+	  .sub-title {
+		color: #secondary-text-color;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.87;}
+	  }
+	 a {
+		text-decoration: none;
+		text-transform: none;
+	  }
+}
+
+@media screen and (min-width: 480px){
+	.projects{
+		width: 480px;
+		margin-left: auto;
+		margin-right: auto;
+		.item{
+			margin-bottom: 30px;
+		 &:last-child{
+			 margin-bottom: 60px;
+		 }
+		}
+	}
+
+}
+@media screen and (min-width: 768px){
+	.projects{
+		width: 768px;
+		.list {
+			margin: -15px;
+			display: flex;
+			flex-wrap: wrap;
+			width: 768px;
+		 }
+		.item{
+			width: calc((100% - 2 * 30px) / 2);
+			margin:15px;
+		} 
+
+	}
+}
+@media screen and (min-width: 1200px){
+
+.projects {
+
+
+	width: 1200px;
+
+	padding-bottom: 94px;
+
+
+ .list {
+	margin: -15px;
+	
+	flex-wrap: wrap;
+	width: 1200px;
+ }
+
+ .item {
+
+	width: calc((100% - 3 * 30px) / 3);
+	margin:15px;
+
+	&:last-child{
+		margin-bottom: 15px;
+	}
+  }
+ }
+}

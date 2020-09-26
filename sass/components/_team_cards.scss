@@ -1,0 +1,61 @@
+.team {
+	.name {
+	   margin-top: 30px;
+	   margin-bottom: 10px;
+   
+	   color: $main-text-color;
+	   font-weight: 500;
+	   font-size: 16px;
+	   line-height: 1.19;
+   }
+   
+	.position {
+	   margin-bottom: 16px;
+   
+	   color: $secondary-text-color;
+	   font-weight: 400;
+	   font-size: 16px;
+	   line-height: 1.19;
+   }
+   
+   /*карточка учасников - социальные сети*/
+	.socialnetwork-list {
+	   display: flex;
+	   max-width: 207px;
+	   justify-content: space-between;
+	   margin-left: 32px;
+	}
+	.social-icon:not(:last-child) {
+	   margin-right: 10px;
+	}
+	.social-link {
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   width: 44px;
+	   height: 44px;
+	   color: #afb1b8;
+	   transition: color 250ms $timeline, background-color 250ms $timeline,
+		   border-radius 250ms $timeline;
+   
+	 &:hover,
+	 &:focus {
+	   color: $text-white-color;
+	   background-color: $acent-text-color;
+	   border-radius: 180px;
+	 }
+	}
+	.icon-socialnetwork {
+	   fill: currentColor;}
+   }
+@media screen and (min-width: 480px){
+
+}
+@media screen and (min-width: 768px){
+	
+}
+@media screen and (min-width: 1200px){
+	/* карточка учасников*/
+
+	
+}
